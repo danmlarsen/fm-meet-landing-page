@@ -37,7 +37,6 @@ h3 {
 p {
   font-weight: 500;
   line-height: 1.5;
-  color: var(--color-slate-600);
   text-align: center;
 }
 
@@ -47,10 +46,12 @@ p {
 
 .primary__heading {
   font-size: 4rem;
+  color: var(--color-slate-900);
 }
 
 .secondary__heading {
   font-size: 3.2rem;
+  color: var(--color-slate-900);
 }
 
 .btn {
@@ -80,7 +81,12 @@ p {
 
 .hero-section,
 .features-section {
+  color: var(--color-slate-600);
   margin-bottom: 6.4rem;
+}
+
+.features-section {
+  margin-top: 6.4rem;
 }
 
 .section-number {
@@ -88,6 +94,8 @@ p {
   font-weight: 900;
   margin: 0 auto;
   margin-bottom: -2.8rem;
+  z-index: 1;
+  position: relative;
 }
 
 .section-number div:first-child {
@@ -143,20 +151,27 @@ p {
 
 .features__images {
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  gap: 1.6rem;
+  max-width: 31.1rem;
+  margin: 0 auto;
 }
 
 .features__img {
-  max-height: 14.4rem;
+  width: 100%;
 }
 
 .footer {
   background: url("assets/mobile/image-footer.jpg");
   background-size: cover;
+  color: var(--color-white);
   padding: 3.2rem 6.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2.4rem;
   flex-direction: column;
+
+  position: relative;
 }
