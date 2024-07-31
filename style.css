@@ -1,0 +1,92 @@
+:root {
+    --color-cyan-300: #8fe3f9;
+    --color-cyan-600: #4d96a9;
+    --color-purple-300: #d9b8ff;
+    --color-purple-600: #855fb1;
+    --color-slate-300: #d1d1df;
+    --color-slate-600: #87879d;
+    --color-slate-900: #28283d;
+    --color-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.6rem;
+    padding: 4.8rem 0;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+p {
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-slate-600);
+}
+
+.primary__heading {
+    font-size: 4rem;
+}
+
+.secondary__heading {
+    font-size: 3.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 2.6rem 6rem;
+    background-color: var(--color-purple-600);
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: 900;
+    font-size: 1.8rem;
+    border-radius: 45px;
+}
+
+.btn span {
+    color: var(--color-purple-300);
+}
+
+.btn--cyan {
+    background-color: var(--color-cyan-600);
+}
+
+.btn--cyan span {
+    color: var(--color-cyan-300);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6.4rem;
+}
+
+.hero__img {
+    width: 100%;
+}
+
+.features__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.features__img {
+    max-height: 14.4rem;
+}
